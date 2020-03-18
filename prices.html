@@ -13,15 +13,18 @@
                  padding: 20px 20px;
                  color: black;
                  border: 3px solid black;
-                 width: 1000px;
+                 width: 100%;
                  background-color: white;
                  font-family: cursive;
+                 overflow-x: hidden;
+                 table-layout:fixed;
              }
              .flex-container {
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
-            align-items: center;
+            
+            
         }
 
              th, td {
@@ -59,10 +62,14 @@ footer > img{
   height: 40px;
   width: 40px;
 }
+#table1 {display: table;
+         width: 100%}
+     
          </style>
+        
 </head>
 <body>
-    <div class=" flex-container">
+    <div class="flex-container">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <a class="navbar-brand" href="index.html"><img src="image/navimage.jpg"/></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -99,14 +106,15 @@ footer > img{
 </ul>
 </div>
             </nav>
-                      <div id="table1" class="container">
-                          <h3>African Dishes</h3>
-                          <table>
+                      <div id="table1" class="container table-responsive-sm vw-90 d-flex flex-sm-nowrap align-content-sm-center flex-column d-sm-block d-lg-block">
+                        <h3>African Dishes</h3>  
+                        <div class="table-responsive-sm">
+                          <table class="table w-auto ">
                              <tr> 
-                                 <th>Photo</th>
-                                 <th>Food</th>
-                                 <th>Price (per plate)</th>
-                                 <th>Side Package</th>
+                                 <th scope="col">Photo</th>
+                                 <th scope="col">Food</th>
+                                 <th scope="col">Price (per plate)</th>
+                                 <th scope="col">Side Package</th>
                              </tr>
                              <tr class="even">
                                  <td><img src="image/jollof.jpg"/></td>
@@ -131,21 +139,22 @@ footer > img{
                                             <td>Semo and Egusi Soup</td>
                                             <td>$399.99</td>
                                             <td>1 LaCasera</td>
-                                        </tr>
+                                        </tr> 
                                         <tr class="even">
                                                 <td><img src="image/beansandplant.jpg"/></td>
                                                 <td>Beans and Plantain</td>
                                                 <td>$359.99</td>
                                                 <td>1 Smoov Chapman</td>
                                             </tr>
-                          </table>
+                          </table></div>
                           <h3>International Entree`</h3>
-                          <table>
+                         <div class="table-responsive-sm">
+                          <table class="table w-auto">
                              <tr> 
-                                 <th>Photo</th>
-                                 <th>Food</th>
-                                 <th>Price (per plate)</th>
-                                 <th>Side Package</th>
+                                 <th scope="col">Photo</th>
+                                 <th scope="col">Food</th>
+                                 <th scope="col">Price (per plate)</th>
+                                 <th scope="col">Side Package</th>
                              </tr>
                              <tr class="even">
                                  <td><img src="image/spaniloo.jpg"/></td>
@@ -172,14 +181,15 @@ footer > img{
                                             <td>1 cup of Coffee</td>
                                         </tr>
                                        
-                          </table>
+                          </table></div>
                           <h3>After-Meal Desserts</h3>
-                          <table>
+                          <div class="table-responsive-sm">
+                          <table class="table w-auto">
                              <tr> 
-                                 <th>Photo</th>
-                                 <th>Food</th>
-                                 <th>Price (per plate)</th>
-                                 <th>Side Package</th>
+                                 <th scope="col">Photo</th>
+                                 <th scope="col">Food</th>
+                                 <th scope="col">Price (per plate)</th>
+                                 <th scope="col">Side Package</th>
                              </tr>
                              <tr class="even">
                                  <td><img src="image/shawarma.jpg"/></td>
@@ -212,14 +222,15 @@ footer > img{
                                             <td>1 LaCasera</td>
                                         </tr>
                                         
-                          </table>
+                          </table></div>
                           <h3>Special Treats</h3>
-                          <table>
+                          <div class="table-responsive-sm">
+                          <table class="table w-auto">
                              <tr> 
-                                 <th>Photo</th>
-                                 <th>Food</th>
-                                 <th>Price (per plate)</th>
-                                 <th>Side Package</th>
+                                 <th scope="col">Photo</th>
+                                 <th scope="col">Food</th>
+                                 <th scope="col">Price (per plate)</th>
+                                 <th scope="col">Side Package</th>
                              </tr>
                              <tr class="even">
                                  <td><img src="image/magnitumtum.jpg"/></td>
@@ -234,11 +245,11 @@ footer > img{
                                     <td>1 Eva Bottle water</td>
                                 </tr>
                                           
-                          </table>
+                          </table></div>
                       </div>
                       
-                      
-                      <nav aria-label="Page navigation example" class="flex-container">
+                      <div class="container  d-flex flex-sm-column align-content-center">
+                      <nav aria-label="Page navigation example" class="container  d-flex flex-sm-column align-content-center">
                             <ul class="pagination">
                               <li class="page-item">
                                 <a class="page-link" href="menu.html" aria-label="Previous">
@@ -256,7 +267,7 @@ footer > img{
                                 </a>
                               </li>
                             </ul>
-                          </nav>
+                          </nav></div>
                     <blockquote class="blockquote text-center">
                     <footer class="blockquote-footer">
                         Made By<cite title="Source Title"> Zukaberg</cite> <br />
